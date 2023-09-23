@@ -17,6 +17,7 @@ so now to initially move a file from the changed area to staged area we use the 
 in git terms
     version = commit
     so saying commit or commit history means version or version history
+    so please remember the word commit as version
 
     thus git commit means we are creating a version
 
@@ -38,8 +39,27 @@ so when u wanna move the files back from the staging area back to changes area u
     git reset ~thefilename-uwanna-move-back
     git reset . (moves all files/folder from the staging area back to changes environment )
 
-when we a file is untracked it means it is not yet added to the staging area
+when a file says:
+    untracked(U) - it is not yet added to staging area since inception
+    modified(M) - it is modified from the previous commit/version
 
 
+switching between the commits 
+
+usually we may wanna switch between one commit to any previous commit
+to do so:
+    git checkout ~commit-hash
+
+    consider u r switching from version3(ur last commit) to version2
+
+    once after checkout, now when u use git log, it shows you only the past commit histories.
+    this is coz by default git log shows only only from the current commit you are in till the past commits
+
+    so to see the other one also use
+    git log --all
+
+    note: HEAD denotes nothing but the commit that you are currently in.
+
+    
 
 
