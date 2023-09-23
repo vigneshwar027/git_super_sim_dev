@@ -1,0 +1,41 @@
+GIT 
+
+to check if git already exist in machine
+type git and enter
+
+to demote which files/folder has to be tracked for the next version
+we use the command
+
+git add ~file/folder name
+
+this says for the next version
+
+in git terms
+    version = commit
+    so saying commit or commit history means version or version history
+
+    thus git commit means we are creating a version
+
+
+how can u edit a commit that you messed up:
+    do : git add . (again)
+         git commit -m "the new commit msg" --amend
+
+    this amends the previous commit rather creating a new one.
+
+
+git log 
+    shows the list of commits thats is done
+
+
+when u run the git add command u are moving the files from changes area to staging area(those files that are selected for commit)
+
+so when u wanna move the files back from the staging area back to changes area u use the below command
+    git reset ~thefilename-uwanna-move-back
+    git reset . (moves all files/folder from the staging area back to changes environment )
+
+when we a file is untracked it means it is not yet added to the staging area
+
+
+
+
