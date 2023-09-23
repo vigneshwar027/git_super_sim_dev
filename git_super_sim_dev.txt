@@ -3,12 +3,16 @@ GIT
 to check if git already exist in machine
 type git and enter
 
-to demote which files/folder has to be tracked for the next version
-we use the command
+the git cycles has two stages
 
-git add ~file/folder name
+1.  changed area (any files that are changed sits here)
+2.  staged area (file that are meant to be added to the next version that is those that are meant to be committed sits here.)
 
-this says for the next version
+once the files are committed the files are cleared from both changed area and staged area
+
+so now to initially move a file from the changed area to staged area we use the command
+
+    git add ~file/folder name or .
 
 in git terms
     version = commit
