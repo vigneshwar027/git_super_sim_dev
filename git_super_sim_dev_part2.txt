@@ -48,3 +48,42 @@ why online?
     
     4. if not finally go for ssh keys
 
+
+viewing files in github
+    in github u can go see each commits and browse files option there helps u go back in time see how all ur files were in a specific commit.
+
+
+git push:
+    git push origin master --set-upstream
+    the above sets the this origin as a default origin for any upcoming push
+    so u can simply do git push the next time
+
+    also a git push command will only push the commits, so if u have not added ur changes to staging area using git add. and commiting with git commit. no push will happen. it simply says everything upto date.
+
+    consider a scenario
+        where u have made a commit locally and pushed it to origin too
+        then u are amending the same commit locally using
+        git commit -m "dsfds" --amend
+
+        now this amends the latest commit locally but not remotely
+        after amending if u push to the remote it wont accept coz there is already a commit in its place.
+
+        so youll have to force push (overwrite the remote commit) using
+        git push origin master <--force|-f>
+
+
+copying repo from remote to local
+
+    git clone <the repo url> <the folder name>
+    if a folder name is not provided a folder is created in the name of the repo u clone
+
+usually when any changes happened in ur remote by someone's else push or direct edit in the website.
+
+it is obvious that ur remote and local wont be in same commit
+and to always check if ur local and remote are in same commit
+we use git log --all --graph
+but the changes that happened in remote wont reflect in ur terminal automatically.
+so it is necessary to run 
+git fetch(to fetch the latest remote commit status)
+then run git log --all --graph
+
