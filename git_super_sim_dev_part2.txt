@@ -21,10 +21,30 @@ why online?
     git remote --verbose or git remote -v(in short)
 
     to set username
-    git config --global credentials.user <"username">
+    git config --global credential.user <"username">
 
     pushing
     while we push a code along with the commit history 
-    we push one branch at a time
+    we push one branch at a time 
 
+    so the command is 
+    git push <origin-name> <remote branch name>
+    eg: git push origin branch12
+
+    note : the branch u mention here denotes always the remote branch where u wanna push
+    and which branch is being pushed is always by default ur current branch.
+
+    pushing issues:
+    when pushing is not getting done
     
+    1. check if the remote url is http and not shows
+    2. try changing the url by adding ur username before after the http
+        eg: https://vigneshwar027@github/....the rest
+    3. try deleting the keychain access and now git will ask for username
+    and password - the password is not the log in password but the generated token
+
+        to generate token 
+            setting->developer setting->generate token
+    
+    4. if not finally go for ssh keys
+
