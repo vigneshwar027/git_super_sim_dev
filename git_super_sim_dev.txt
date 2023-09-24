@@ -1,23 +1,31 @@
+NOTE: every where i used ~ denotes the placeholders to come thr
+
 GIT 
 
 to check if git already exist in machine
 type git and enter
 
+git init
+command starts tracking the folders for any changes to happen.
+
 the git cycles has two stages
 
-1.  changed area (any files that are changed sits here)
+1.  changed area (any files that are changed sits here automatically)
 2.  staged area (file that are meant to be added to the next version that is those that are meant to be committed sits here.)
+
+files moving from the changed to staged area doesn't happens automatically, it is you who decides what files has to be considered for staging area
+
+so now to move a file from the changed area to staged area we use the command
+    git add ~file/folder name or .
 
 once the files are committed the files are cleared from both changed area and staged area
 
-so now to initially move a file from the changed area to staged area we use the command
 
-    git add ~file/folder name or .
 
 in git terms
     version = commit
     so saying commit or commit history means version or version history
-    so please remember the word commit as version
+    so please remember the word version as commit
 
     thus git commit means we are creating a version
 
@@ -53,13 +61,44 @@ to do so:
     consider u r switching from version3(ur last commit) to version2
 
     once after checkout, now when u use git log, it shows you only the past commit histories.
-    this is coz by default git log shows only only from the current commit you are in till the past commits
+    this is coz by default git log shows only from the current commit you are in till the past commits
 
-    so to see the other one also use
+    so to see those that happened beyond the head commit also
     git log --all
 
     note: HEAD denotes nothing but the commit that you are currently in.
 
     
+    also viewing the previous version/commit is not same as restoring to a previous version/commit
 
+    1) git checkout ~commithash(brings the code back to previous version for viewing)
+    whereas
+
+
+    2) git checkout ~commithash ./filename(restores all or the said file back to the said version)
+    
+    doing method 2 two will simply revert the changes to the said commit without moving the HEAD or doing any branching, the HEAD always sits where it was.
+
+    but method 1 will move your HEAD to said commit and if you are making changes on top of it
+    then it will start branching.
+
+
+
+    note: even git log --all wont show the commits that happened beyond the HEAD, on a detached head type of branch.
+    a detached head type of branch is branch which doesnt have a dedicated branch name and reference to every commits on that branch is tied only with those commit hashes.
+
+
+
+
+miscellaneous:
+setting shortcut
+    git config --global alias.s "status"
+    this sets the shortcut for status as said
+    so git status = git s
+
+
+how do u ignore a specific file from tracking
+    consider u have a sensitive file like secret keys that u dont wanna add to the git tracking
+
+    so add a file called .gitignore 
 
