@@ -24,7 +24,6 @@ so now to move a file from the changed area to staged area we use the command
 once the files are committed the files are cleared from both changed area and staged area
 
 
-
 in git terms
     version = commit
     so saying commit or commit history means version or version history
@@ -69,7 +68,7 @@ to do so:
     so to see those that happened beyond the head commit also
     git log --all
 
-    note: HEAD denotes nothing but the commit that you are currently in.
+    note: HEAD denotes nothing but the commit/branch that you are currently in.
 
     
     also viewing the previous version/commit is not same as restoring to a previous version/commit

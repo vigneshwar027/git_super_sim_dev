@@ -16,3 +16,29 @@ to create new branch
 
 to view list of available local branches
     git branch
+
+
+so once we are done working with the feature branch, eventually at some point we wanna merge all changes into one branch.
+
+merging behaviour:
+    basically the merging happens in such a way , the git consider the updates done on main branch and also it considers the updates done on the feature branch and combines both
+
+    if updates the updates in both branches happened in two different files.
+    then theres is actually no overlap
+
+    if the updates are happening in same file.
+
+    eg : line 5 is edited in main branch and line 7 is edited in feature branch.
+    then the git merge result code contains the changes made in both line 5 and line 7.
+
+
+    So, now in which branch do the merged version/commit falls into.?
+        it falls in the branch were we are currently in.(where ur HEAD points)
+
+    it is generally a good practice to put the merge result in main branch and then delete the feature branch.
+
+
+merging:
+    git merge <feature1> -m "this merge message"
+    this merges the feature1 branch into the current branch ur in and creates a new commit on the top of that current branch.
+
