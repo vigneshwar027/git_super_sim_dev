@@ -105,4 +105,4 @@ git pull and clone:
 
 
     when u run git clone 
-    git makes a copy inside the folder that the terminal is currently opened in
+    git makes a copy inside the folder that the terminal is currently opened in.

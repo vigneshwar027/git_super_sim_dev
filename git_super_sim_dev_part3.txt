@@ -1,0 +1,18 @@
+git branching and merging
+
+so when arises a scenario for branching
+
+    consider u have a code with a main branch that already has mulitple commit histories in it
+
+    now there is a need for new feature to be implemented step by step but that should not disturb the existing main branch.
+
+    this is where we need a new branch to work on
+
+    everytime a new branch is created, it is like creating a copy of the main branch.
+    and then starting to work from there.
+
+to create new branch
+    git branch <branch name>
+
+to view list of available local branches
+    git branch
