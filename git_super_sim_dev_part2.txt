@@ -1,0 +1,30 @@
+going further to push code online and have a backup
+
+
+why online?
+    there are chances ur machine might mess up
+
+    so to push a code to online
+
+    step1: 1st u need a remote placeholders for that we you wanna create a remote repository or an existing one.
+
+    step2: one a repository is made available, u wanna create a bridge between you local repo and the remote repo
+
+        for this you use
+        git remote add <any-nickname> <remote repo's https url>
+
+        usually the nickname is origin by convention
+
+        thus eg: git remote add myorigin1 some_url
+
+    to see if ur local repo is pointing to which remote 
+    git remote --verbose or git remote -v(in short)
+
+    to set username
+    git config --global credentials.user <"username">
+
+    pushing
+    while we push a code along with the commit history 
+    we push one branch at a time
+
+    

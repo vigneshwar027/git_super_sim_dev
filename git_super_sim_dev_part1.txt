@@ -100,5 +100,11 @@ setting shortcut
 how do u ignore a specific file from tracking
     consider u have a sensitive file like secret keys that u dont wanna add to the git tracking
 
-    so add a file called .gitignore 
+    so add a file called .gitignore
 
+
+################## the end part1 ####################
+
+
+
+    
