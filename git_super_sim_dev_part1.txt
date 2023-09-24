@@ -2,8 +2,11 @@ NOTE: every where i used ~ denotes the placeholders to come thr
 
 GIT 
 
-to check if git already exist in machine
+to check if git already installed in machine
 type git and enter
+
+to check if a git repo is already initialized in a folder
+type git status and enter
 
 git init
 command starts tracking the folders for any changes to happen.

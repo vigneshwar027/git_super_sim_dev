@@ -89,3 +89,20 @@ then run git log --all --graph
 
 #########
 these are the lines added from the website
+
+
+
+git pull and clone:
+    git pull pulls all the changes that has happened on the remote branch of the repo
+    git clone clones the whole repo and it's commit histories
+
+    pull is branch specific
+    clone is repo specific
+
+    thats y u specific
+    git pull <origin> <branch name>
+    git clone <repo url>
+
+
+    when u run git clone 
+    git makes a copy inside the folder that the terminal is currently opened in
